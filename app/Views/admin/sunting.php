@@ -111,20 +111,13 @@ input:focus::placeholder{
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
-.two-col{
+
+.two a{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     color: #fff;
     font-size: small;
     margin-top: 10px;
-    
-}
-
-.one{
-    display: flex;
-}
-
-.two a{
     text-decoration: none;
     color: white;
 }
@@ -179,8 +172,8 @@ input:focus::placeholder{
     <div class="box">
             <div class="contain">
                 <div class="top-header">
-                    <p id="judul">Sign Up</p>
-                    <header>Data Pendaftar</header>
+                    <p id="judul">Sunting</p>
+                    <header>Data Admin</header>
                 </div>
                 <?php
 
@@ -243,6 +236,9 @@ input:focus::placeholder{
                         <input type="hidden" name="_method" value="PUT">
                   
                     <button name="submit" class="submit" value="ya">tambah</button>
+                    <div class="two">
+                            <label><a href="<?=site_url("/admin")?>">&lt;&lt; back </a></label>
+                        </div>
 
 
                 <!-- </form> -->
